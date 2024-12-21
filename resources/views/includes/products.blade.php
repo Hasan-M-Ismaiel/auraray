@@ -8,24 +8,46 @@
     </div><!-- End Section Title -->
 
 
-
     <div class="container">
         <!--search bar-->
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form>
-                        <div class="input-group mb-3">
-                            <select class="form-select" style="max-width: 150px;">
-                                <option class="option_" selected>All Categories</option>
-                                <option class="option_" value="1">Hair Care</option>
-                                <option class="option_" value="2">Shaving and Grooming</option>
-                                <option class="option_" value="3">Skin Care</option>
-                            </select>
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <button class="btn search_" type="submit">Search</button>
-                        </div>
-                    </form>
+                    <div class="input-group mb-3">
+                        <select id="category" class="form-select" style="max-width: 150px;">
+                            <option class="option_" selected>Category</option>
+                            <option class="option_" value="Hair Care">Hair Care</option>
+                            <option class="option_" value="Shaving and Grooming">Shaving and Grooming</option>
+                            <option class="option_" value="Skin Care">Skin Care</option>
+                        </select>
+                        <select id="type" class="form-select" style="max-width: 150px;">
+                            <option class="option_" selected>Type</option>
+                            <option class="option_" value="Shampoo">Shampoo</option>
+                            <option class="option_" value="Conditioner">Conditioner</option>
+                            <option class="option_" value="Hair treatment cream">Hair treatment cream</option>
+                            <option class="option_" value="Face scrub">Face scrub</option>
+                            <option class="option_" value="Foot & Body scrub">Foot & Body scrub</option>
+                            <option class="option_" value="Shower gel">Shower gel</option>
+                        </select>
+                        <select id="flavor" class="form-select" style="max-width: 150px;">
+                            <option class="option_" selected>Flavor</option>
+                            <option class="option_" value="Aloevera">Aloevera</option>
+                            <option class="option_" value="Olive oil">Olive oil</option>
+                            <option class="option_" value="Strawberry">Strawberry</option>
+                            <option class="option_" value="Lavendar">Lavendar</option>
+                            <option class="option_" value="Coconut oil">Coconut oil</option>
+                            <option class="option_" value="Argan oil">Argan oil</option>
+                        </select>
+                        <select id="size" class="form-select" style="max-width: 150px;">
+                            <option class="option_" selected>Size</option>
+                            <option class="option_" value="500">500ml</option>
+                            <option class="option_" value="1000">1000ml</option>
+                            <option class="option_" value="1200">1200ml</option>
+                            <option class="option_" value="4500">4500ml</option>
+                            <option class="option_" value="5000">5000ml</option>
+                        </select>
+                        <button id="search" class="btn search_" type="submit">Search</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,133 +55,15 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
             <ul class="product-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">Hair Care</li>
-                <li data-filter=".filter-product">Shaving and Grooming</li>
-                <li data-filter=".filter-branding">Skin Care</li>
+                <li class="filter-active" id="reset">Reset</li>
             </ul><!-- End product Filters -->
 
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-app">
-                    <img src="assets/img/masonry-product/masonry-product-1.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>App 1</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-1.png" title="App 1"
-                            data-gallery="product-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-product">
-                    <img src="assets/img/masonry-product/masonry-product-2.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Product 1</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-2.png" title="Product 1"
-                            data-gallery="product-gallery-product" class="glightbox preview-link"><i
-                                class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-branding">
-                    <img src="assets/img/masonry-product/masonry-product-3.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Branding 1</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-3.png" title="Branding 1"
-                            data-gallery="product-gallery-branding" class="glightbox preview-link"><i
-                                class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-app">
-                    <img src="assets/img/masonry-product/masonry-product-4.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>App 2</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-4.png" title="App 2"
-                            data-gallery="product-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-product">
-                    <img src="assets/img/masonry-product/masonry-product-5.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Product 2</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-5.png" title="Product 2"
-                            data-gallery="product-gallery-product" class="glightbox preview-link"><i
-                                class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-branding">
-                    <img src="assets/img/masonry-product/masonry-product-6.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Branding 2</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-6.png" title="Branding 2"
-                            data-gallery="product-gallery-branding" class="glightbox preview-link"><i
-                                class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-app">
-                    <img src="assets/img/masonry-product/masonry-product-7.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>App 3</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-7.png" title="App 3"
-                            data-gallery="product-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-product">
-                    <img src="assets/img/masonry-product/masonry-product-8.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Product 3</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-8.png" title="Product 3"
-                            data-gallery="product-gallery-product" class="glightbox preview-link"><i
-                                class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-                <div class="col-lg-4 col-md-6 product-item isotope-item filter-branding">
-                    <img src="assets/img/masonry-product/masonry-product-9.png" class="img-fluid" alt="">
-                    <div class="product-info">
-                        <h4>Branding 3</h4>
-                        <p>Lorem ipsum, dolor sit</p>
-                        <a href="assets/img/masonry-product/masonry-product-9.png" title="Branding 2"
-                            data-gallery="product-gallery-branding" class="glightbox preview-link"><i
-                                class="bi bi-zoom-in"></i></a>
-                        <a href="product-details.html" title="More Details" class="details-link"><i
-                                class="bi bi-link-45deg"></i></a>
-                    </div>
-                </div><!-- End product Item -->
-
-            </div><!-- End product Container -->
-
+            <div id="products-lists">
+                <!--products container-->
+                @include('includes.data')
+                <!-- End product Container -->
+            </div>
         </div>
-
     </div>
-
 </section>
 <!-- /product Section -->

@@ -3,7 +3,7 @@
 @section('content')
 
 
-<main class="main">
+<main class="main mt-5">
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
@@ -19,14 +19,30 @@
                 </div>
             </div>
         </div>
-        <nav class="breadcrumbs">
+
+        @if($product->flavor == "aloevera")
+        <nav class="" style="background-color: color-mix(in srgb, #66915a, transparent 50%);">
+        @elseif($product->flavor == "lavendar")
+        <nav class="" style="background-color: color-mix(in srgb, #9d73b2, transparent 50%);">
+        @elseif($product->flavor == "argan")
+        <nav class="" style="background-color: color-mix(in srgb, #dbbda3, transparent 50%);">
+        @elseif($product->flavor == "coconut")
+        <nav class="" style="background-color: color-mix(in srgb, #beab95, transparent 50%);">
+        @elseif($product->flavor == "olive")
+        <nav class="" style="background-color: color-mix(in srgb, #8ab39f, transparent 50%);">
+        @elseif($product->flavor == "strawberry")
+        <nav class="" style="background-color: color-mix(in srgb, #b05f59, transparent 50%);">
+        @else
+        <nav class="" style="background-color: color-mix(in srgb, #444444, transparent 50%);">
+        @endif
             <div class="container">
                 <ol>
-                    <li><a href="index.html">Home</a></li>
+                    <li>Home</li>
                     <li class="current">Product Details</li>
                 </ol>
             </div>
         </nav>
+
     </div><!-- End Page Title -->
 
     <!-- product Details Section -->
@@ -58,19 +74,7 @@
                         <div class="swiper-wrapper align-items-center">
 
                             <div class="swiper-slide">
-                                <img src="assets/img/product/app-1.png" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="assets/img/product/product-1.png" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="assets/img/product/branding-1.png" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="assets/img/product/books-1.png" alt="">
+                                <img src="{{ asset($product->image) }}" alt="">
                             </div>
 
                         </div>
@@ -80,35 +84,25 @@
 
                 <div class="col-lg-4">
                     <div class="product-info" data-aos="fade-up" data-aos-delay="200">
-                        <h3>Velora Essence</h3>
+                        <h3>Auraray</h3>
                         <ul>
-                            <li><strong>Category</strong>: Skin Care</li>
-                            <li><strong>Available sizes</strong>:
-                                <ul>
-                                    <li> - 50ml (Travel Size)</li>
-                                    <li> - 150ml (Standard Size)</li>
-                                    <li> - 500ml (Salon/Professional Size)</li>
-                                    <li> - 1000ml (Bulk Size)</li>
-                                </ul>
-                            </li>
-                            <li><strong>Ingredients</strong>: Aloe Vera Extract, Vitamin E, Shea Butter, Green Tea Extract, Glycerin</li>
-                            <li><strong>Denefits</strong>: Gently removes dirt and impurities, nourishes with natural extracts, promotes healthy hair growth, enhances shine, and is suitable for daily use on all hair types.</li>
-                            <li><strong>Description</strong>: AuraRay Shampoo is a premium hair care product designed to cleanse and nourish all hair types, leaving it soft, smooth, and manageable. </li>
-                            <li><strong>Price</strong>: 99.9$</li>
+                            <li><strong>Category</strong>: {{ $product->category }}</li>
+                            <li><strong>Size</strong>: {{ $product->size }}</li>
+                            <li><strong>Ingredients</strong>: {{ $product->ingredients }}</li>
+                            <li><strong>Benefits</strong>: {{ $product->benefits }}</li>
+                            <li><strong>Description</strong>: {{ $product->description}}</li>
+                            <li><strong>Price</strong>: {{ $product->price }}</li>
                         </ul>
                     </div>
                     <div class="product-description" data-aos="fade-up" data-aos-delay="300">
                         <h2>Usage instructions</h2>
                         <p>
-                            Apply a small amount to damp hair, massage gently, and rinse thoroughly. Use as needed for best results.
+                            {{ $product->usage_instructions }}
                         </p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </section><!-- /product Details Section -->
 
 </main>

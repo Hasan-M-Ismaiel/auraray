@@ -32,10 +32,12 @@
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
+
 </head>
 
+<!-- <body class="index-page"> -->
 
-<body>
+<body class="">
 
     <!-- Start header Area -->
     @include('includes.header')
@@ -72,7 +74,157 @@
     <!--for the sweet alert-->
     @include('sweetalert::alert')
     @yield('scripts')
-    
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(window).on('hashchange', function() {
+                if (window.location.hash) {
+                    var page = window.location.hash.replace('#', '');
+                    if (page == Number.NaN || page <= 0) {
+                        return false;
+                    } else {
+                        getData(page);
+                    }
+                }
+            });
+
+            $(document).on('click', '.pagination a', function(event) {
+                $('li').removeClass('active');
+                $(this).parent('li').addClass('active');
+                event.preventDefault();
+
+                var myurl = $(this).attr('href');
+                var page = $(this).attr('href').split('page=')[1];
+
+                var category = $('#category').find(":selected").val();
+
+                var category = $('#category').find(":selected").val();
+                var type = $('#type').find(":selected").val();
+                var flavor = $('#flavor').find(":selected").val();
+                var size = $('#size').find(":selected").val();
+                event.preventDefault();
+
+                if (category == "Category") {
+                    category = null;
+                }
+
+                if (type == "Type") {
+                    type = null;
+                }
+
+                if (size == "Size") {
+                    size = null;
+                }
+
+                if (flavor == "Flavor") {
+                    flavor = null;
+                }
+
+                if (category != null || type != null || size != null || flavor != null) {
+                    getData__(category, type, flavor, size, page);
+                } else {
+                    getData(page);
+                }
+
+            });
+
+            function getData(page) {
+                $.ajax({
+                        url: '?page=' + page,
+                        type: "get",
+                        datatype: "html",
+                    })
+                    .done(function(data) {
+                        $("#products-lists").empty().html(data);
+                        // location.hash = page;
+                    })
+                    .fail(function(jqXHR, ajaxOptions, thrownError) {
+                        alert('No response from server');
+                    });
+            }
+
+            $(document).on('click', '.search_', function(event) {
+                var category = $('#category').find(":selected").val();
+                var type = $('#type').find(":selected").val();
+                var flavor = $('#flavor').find(":selected").val();
+                var size = $('#size').find(":selected").val();
+                event.preventDefault();
+
+                if (category == "Category") {
+                    category = null;
+                }
+
+                if (type == "Type") {
+                    type = null;
+                }
+
+                if (size == "Size") {
+                    size = null;
+                }
+
+                if (flavor == "Flavor") {
+                    flavor = null;
+                }
+                getData_(category, type, flavor, size);
+            });
+
+            function getData_(category, type, flavor, size) {
+                $.ajax({
+                        url: '/products?category=' + category + '&type=' + type + '&flavor=' + flavor + '&size=' + size,
+                        type: "get",
+                        datatype: "html",
+                    })
+                    .done(function(data) {
+                        $("#products-lists").empty().html(data);
+                    })
+                    .fail(function(jqXHR, ajaxOptions, thrownError) {
+                        alert('No response from server');
+                    });
+            }
+
+            function getData__(category, type, flavor, size, page) {
+                $.ajax({
+                        url: '/products?category=' + category + '&type=' + type + '&flavor=' + flavor + '&size=' + size + '&page=' + page,
+                        type: "get",
+                        datatype: "html",
+                    })
+                    .done(function(data) {
+                        $("#products-lists").empty().html(data);
+                    })
+                    .fail(function(jqXHR, ajaxOptions, thrownError) {
+                        alert('No response from server');
+                    });
+            }
+
+            $("#reset").click(function() {
+                $('#category').val('Category'); 
+                $('#type').val('Type'); 
+                $('#flavor').val('Flavor'); 
+                $('#size').val('Size'); 
+
+                getData_reset();
+            });
+
+            function getData_reset() {
+                $.ajax({
+                        url: '?page=1',
+                        type: "get",
+                        datatype: "html",
+                    })
+                    .done(function(data) {
+                        $("#products-lists").empty().html(data);
+                        // location.hash = page;
+                    })
+                    .fail(function(jqXHR, ajaxOptions, thrownError) {
+                        alert('No response from server');
+                    });
+            }
+        });
+    </script>
 </body>
 
 </html>

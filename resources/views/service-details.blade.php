@@ -2,7 +2,7 @@
 
 @section('content')
 
-<main class="main">
+<main class="main mt-5">
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
@@ -38,17 +38,6 @@
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 
                     <div class="service-box">
-                        <h4>Serices List</h4>
-                        <div class="services-list">
-                            <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>Web Design</span></a>
-                            <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Web Design</span></a>
-                            <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Product Management</span></a>
-                            <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Graphic Design</span></a>
-                            <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Marketing</span></a>
-                        </div>
-                    </div><!-- End Services List -->
-
-                    <div class="service-box">
                         <h4>Download Catalog</h4>
                         <div class="download-catalog">
                             <a href="#"><i class="bi bi-filetype-pdf"></i><span>Catalog PDF</span></a>
@@ -59,10 +48,10 @@
                     <div class="help-box d-flex flex-column justify-content-center align-items-center">
                         <i class="bi bi-headset help-icon"></i>
                         <h4>Have a Question?</h4>
-                        <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+1 5589 55488
+                        <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+971 4 123 4567
                                 55</span></p>
                         <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a
-                                href="mailto:contact@example.com">contact@example.com</a></p>
+                                href="mailto:info@auraray.ae">info@auraray.ae</a></p>
                     </div>
 
                 </div>
@@ -101,6 +90,5 @@
     </section><!-- /Service Details Section -->
 
 </main>
-
 
 @endsection

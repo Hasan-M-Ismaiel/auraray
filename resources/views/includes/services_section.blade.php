@@ -48,21 +48,7 @@
                         effectiveness, and reliability. </p>
                 </div>
             </div><!-- End Service Item -->
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="service-item position-relative">
-                    <div class="icon">
-                        <i class="bi bi-bounding-box-circles"></i>
-                    </div>
-                    <a href="service-details.html" class="stretched-link">
-                        <h3>Certifications</h3>
-                    </a>
-                    <p>We hold industry certifications that ensure quality, safety, and compliance in all our products.</p>
-                    <a href="service-details.html" class="stretched-link"></a>
-                </div>
-            </div><!-- End Service Item -->
         </div>
-
     </div>
 
 </section>
