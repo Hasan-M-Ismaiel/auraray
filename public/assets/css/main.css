@@ -1967,3 +1967,34 @@ section,
 /* .starter-section {
   Add your styles here 
 } */
+
+/* Theme Styling */
+.theme-select {
+  border-color: #ffc451;
+  color: #333;
+  background-color: #fffdf4;
+  font-weight: bold;
+}
+
+.theme-select:focus {
+  border-color: #e5a930;
+  box-shadow: 0 0 5px rgba(229, 169, 48, 0.5);
+}
+
+.theme-btn {
+  background-color: #ffc451;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.theme-btn:hover {
+  background-color: #e5a930;
+  color: #fff;
+  border: none;
+}
+
+.theme-btn:focus {
+  background-color: #e5a930;
+  box-shadow: 0 0 5px rgba(229, 169, 48, 0.5);
+}
