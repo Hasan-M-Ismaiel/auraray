@@ -3,8 +3,10 @@
 @section('content')
 
 
-<main class="main mt-5">
-
+<main class="main">
+    <section id="hero" class="hero_other section dark-background">
+        <img id="hero_image_other" src="{{ asset('assets/img/hero-bg-other-page.png') }}" alt="" data-aos="fade-in">
+    </section>
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
         <div class="heading">
@@ -22,26 +24,26 @@
 
         @if($product->flavor == "aloevera")
         <nav class="" style="background-color: color-mix(in srgb, #66915a, transparent 50%);">
-        @elseif($product->flavor == "lavendar")
-        <nav class="" style="background-color: color-mix(in srgb, #9d73b2, transparent 50%);">
-        @elseif($product->flavor == "argan")
-        <nav class="" style="background-color: color-mix(in srgb, #dbbda3, transparent 50%);">
-        @elseif($product->flavor == "coconut")
-        <nav class="" style="background-color: color-mix(in srgb, #beab95, transparent 50%);">
-        @elseif($product->flavor == "olive")
-        <nav class="" style="background-color: color-mix(in srgb, #8ab39f, transparent 50%);">
-        @elseif($product->flavor == "strawberry")
-        <nav class="" style="background-color: color-mix(in srgb, #b05f59, transparent 50%);">
-        @else
-        <nav class="" style="background-color: color-mix(in srgb, #444444, transparent 50%);">
-        @endif
-            <div class="container">
-                <ol>
-                    <li>Home</li>
-                    <li class="current">Product Details</li>
-                </ol>
-            </div>
-        </nav>
+            @elseif($product->flavor == "lavendar")
+            <nav class="" style="background-color: color-mix(in srgb, #9d73b2, transparent 50%);">
+                @elseif($product->flavor == "argan")
+                <nav class="" style="background-color: color-mix(in srgb, #dbbda3, transparent 50%);">
+                    @elseif($product->flavor == "coconut")
+                    <nav class="" style="background-color: color-mix(in srgb, #beab95, transparent 50%);">
+                        @elseif($product->flavor == "olive")
+                        <nav class="" style="background-color: color-mix(in srgb, #8ab39f, transparent 50%);">
+                            @elseif($product->flavor == "strawberry")
+                            <nav class="" style="background-color: color-mix(in srgb, #b05f59, transparent 50%);">
+                                @else
+                                <nav class="" style="background-color: color-mix(in srgb, #444444, transparent 50%);">
+                                    @endif
+                                    <div class="container">
+                                        <ol>
+                                            <li>Home</li>
+                                            <li class="current">Product Details</li>
+                                        </ol>
+                                    </div>
+                                </nav>
 
     </div><!-- End Page Title -->
 

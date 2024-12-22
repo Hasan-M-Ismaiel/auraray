@@ -2,8 +2,11 @@
 
 @section('content')
 
-<main class="main mt-5">
 
+<main class="main">
+    <section id="hero" class="hero_other section dark-background">
+        <img id="hero_image_other" src="{{ asset('assets/img/hero-bg-other-page.png') }}" alt="" data-aos="fade-in">
+    </section>
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
         <div class="heading">
