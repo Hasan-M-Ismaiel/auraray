@@ -16,7 +16,7 @@
                     <div class="icon">
                         <i class="bi bi-activity"></i>
                     </div>
-                    <a href="service-details.html" class="stretched-link">
+                    <a href="{{ route('service') }}" class="stretched-link">
                         <h3>Private label</h3>
                     </a>
                     <p>for hair salons and beauty businesses.</p>
@@ -28,7 +28,7 @@
                     <div class="icon">
                         <i class="bi bi-broadcast"></i>
                     </div>
-                    <a href="service-details.html" class="stretched-link">
+                    <a href="{{ route('service') }}" class="stretched-link">
                         <h3>Process information</h3>
                     </a>
                     <p>We ensure top-quality products through a meticulous process, from sourcing premium ingredients to
@@ -41,7 +41,7 @@
                     <div class="icon">
                         <i class="bi bi-easel"></i>
                     </div>
-                    <a href="service-details.html" class="stretched-link">
+                    <a href="{{ route('service') }}" class="stretched-link">
                         <h3>Quality control</h3>
                     </a>
                     <p>We ensure top-quality products through rigorous testing and consistent monitoring for safety,

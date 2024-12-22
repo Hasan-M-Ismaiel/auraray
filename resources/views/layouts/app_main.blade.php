@@ -37,7 +37,7 @@
 
 <!-- <body class="index-page"> -->
 
-<body class="index-page">
+<body class="">
 
     <!-- Start header Area -->
     @include('includes.header')
