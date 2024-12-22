@@ -7,9 +7,9 @@
 
     <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
       <div class="col-xl-6 col-lg-8">
-        <img src="assets/img/logo_.png" style="max-height: 275px; max-width: 400px; justify-content: center;" alt="...">
+        <img src="assets/img/logo_.png" style="max-height: 155px; max-width: 255px; justify-content: center;" alt="...">
         <!-- <h2>Aura<span>Ray</span></h2> -->
-        <p>Premium Care for Hair, Skin, and Grooming</p>
+        <!-- <p>Premium Care for Hair, Skin, and Grooming</p> -->
       </div>
     </div>
 

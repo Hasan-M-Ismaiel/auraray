@@ -3,7 +3,7 @@
 
         <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-lg-0">
             <img src="{{ asset('assets/img/logo_.png') }}" alt="...">
-            <span>.</span>
+            <!-- <span>.</span> -->
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -16,6 +16,6 @@
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-        <a class="btn-getstarted" href="{{ route('home') }}#about">Al Enayah Al Kamlah </br> <span style="font-size: 11px; color:#8a7f7f">Manufacture Of Cosmetic Tools & Supply</span></a>
+        <a class="btn-getstarted" href="{{ route('home') }}#about">Al Enayah Al Kamlah </a>
     </div>
 </header>
