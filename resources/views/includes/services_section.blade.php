@@ -23,7 +23,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-item position-relative">
                     <div class="icon">
-                        <i class="bi bi-activity"></i>
+                        <i class="bi bi-badge-tm"></i>
                     </div>
                     <a href="{{ route('service_1') }}" class="stretched-link">
                         <h3>Private Label Manufacturing</h3>
@@ -35,7 +35,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-item position-relative">
                     <div class="icon">
-                        <i class="bi bi-broadcast"></i>
+                        <i class="bi bi-box"></i>
                     </div>
                     <a href="{{ route('service_2') }}" class="stretched-link">
                         <h3>Beauty Kits for Hotels</h3>
@@ -47,7 +47,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-item position-relative">
                     <div class="icon">
-                        <i class="bi bi-easel"></i>
+                        <i class="bi bi-truck"></i>
                     </div>
                     <a href="{{ route('service_3') }}" class="stretched-link">
                         <h3>Exporting & Delivery Services</h3>

@@ -25,9 +25,9 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}"> Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#about"> About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ route('home') }}#services"> Services</a></li>
                         <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li> -->
                         <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li> -->
                     </ul>
@@ -36,8 +36,9 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#"> Private label </a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#"> contract manufacturing </a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ route('service_1') }}"> Private Label Manufacturing </a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ route('service_2') }}"> Beauty Kits for Hotels </a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="{{ route('service_3') }}"> Exporting & Delivery Services </a></li>
                         <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li> -->
                         <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li> -->
                         <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li> -->
