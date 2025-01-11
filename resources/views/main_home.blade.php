@@ -7,16 +7,12 @@
 <!-- End Hero Area -->
 
 <!-- Start about Area -->
-@include('includes.about_section')
+
 <!-- End about Area -->
 
 <!-- Start services Area -->
 @include('includes.services_section')
 <!-- End services Area -->
-
-<!-- Start call_to_action Area -->
-@include('includes.call_to_action_section')
-<!-- End call_to_action Area -->
 
 <!-- Start products Area -->
 @include('includes.products')

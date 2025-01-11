@@ -1,4 +1,11 @@
 
+<!--parallax section-->
+<section class="parallax-2">
+    <div class="parallax-inner">
+    </div>
+</section>
+<!--/parallax section-->
+
 <!-- Services Section -->
 <section id="services" class="services section">
 

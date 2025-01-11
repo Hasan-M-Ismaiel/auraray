@@ -70,6 +70,8 @@
 
     <!-- Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    <!-- app JS File parallex -->
+    <script src="{{ asset('assets/js/app.js') }}"></script>
 
     <!--for the sweet alert-->
     @include('sweetalert::alert')

@@ -1,5 +1,10 @@
+
+
 <!-- About Section -->
 <section id="about" class="about section">
+    
+    <!--for parallex-->
+    <div class="shadow"></div>
 
     <div class="container about_" data-aos="fade-up" data-aos-delay="100">
 

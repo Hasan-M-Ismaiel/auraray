@@ -1,3 +1,10 @@
+<!--parallax section-->
+<section class="parallax-3">
+    <div class="parallax-inner">
+    </div>
+</section>
+<!--/parallax section-->
+
 <!-- product Section -->
 <section id="product" class="product section">
 
@@ -30,7 +37,7 @@
                                 <option class="option_" value="Hair treatment cream">Hair treatment cream</option>
                                 <option class="option_" value="Face scrub">Face scrub</option>
                                 <option class="option_" value="Foot & Body scrub">Foot & Body scrub</option>
-                                <option class="option_" value="Shower gel">Shower gel</option>
+                                <option class="option_" value="Shaving gel">Shaving gel</option>
                             </select>
                         </div>
                         <div class="col-6 col-md-3">
@@ -42,6 +49,8 @@
                                 <option class="option_" value="Lavendar">Lavendar</option>
                                 <option class="option_" value="Coconut oil">Coconut oil</option>
                                 <option class="option_" value="Argan oil">Argan oil</option>
+                                <option class="option_" value="Cool blue">Cool blue</option>
+                                <option class="option_" value="Natural clear">Natural clear</option>
                             </select>
                         </div>
                         <div class="col-6 col-md-3">

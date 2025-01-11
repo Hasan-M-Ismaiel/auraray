@@ -1,3 +1,10 @@
+<!--parallax section-->
+<section class="parallax-5">
+    <div class="parallax-inner">
+    </div>
+</section>
+<!--/parallax section-->
+
 <!-- Contact Section -->
 <section id="contact" class="contact section">
 
