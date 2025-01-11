@@ -20,7 +20,9 @@ Route::get('/product/{product}', [MainHomeController::class, 'showProduct'])->na
 Route::get('/products', [MainHomeController::class, 'products'])->name('products');
 
 
-Route::get('/service', [MainHomeController::class, 'service'])->name('service');
+Route::get('/service-1', [MainHomeController::class, 'service_1'])->name('service_1');
+Route::get('/service-2', [MainHomeController::class, 'service_2'])->name('service_2');
+Route::get('/service-3', [MainHomeController::class, 'service_3'])->name('service_3');
 
 
 Route::post('/storeContact', [StoreController::class, 'storeContact'])->name('storeContact');

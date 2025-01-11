@@ -14,9 +14,7 @@
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-lg-8">
                         <h1>Service Details</h1>
-                        <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas
-                            consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
-                            quaerat ipsum dolorem.</p>
+                        <p class="mb-0">Enhance Your Hotel Experience with Luxury Beauty Kits</p>
                     </div>
                 </div>
             </div>
@@ -51,7 +49,7 @@
                     <div class="help-box d-flex flex-column justify-content-center align-items-center">
                         <i class="bi bi-headset help-icon"></i>
                         <h4>Have a Question?</h4>
-                        <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+971 4 123 4567
+                        <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+971 6 715 5323
                                 55</span></p>
                         <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a
                                 href="mailto:info@auraray.ae">info@auraray.ae</a></p>
@@ -61,28 +59,23 @@
 
                 <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
                     <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                    <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
+                    <h3>Beauty Kits for Hotels</h3>
                     <p>
-                        Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque
-                        consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui
-                        omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
+                        We offer customized beauty kits tailored for the hospitality industry, designed to elevate the guest experience with high-end, salon-quality products. These bespoke beauty kits include a variety of premium
                     </p>
                     <ul>
-                        <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-                        <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span>
-                        </li>
-                        <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>hair care</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>skin care</span></li>
+                        <li><i class="bi bi-check-circle"></i> <span>grooming products</span></li>
                     </ul>
                     <p>
-                        Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste
-                        veniam repellat odit. Aut pariatur itaque nesciunt fuga.
+                        such as creams, gels, hair oils, and more.
                     </p>
                     <p>
-                        Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia
-                        doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet
-                        velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum.
-                        Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto
-                        ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
+                        Our beauty kits can be tailored for both men and women, offering the perfect blend of luxury and convenience.
+                    </p>
+                    <p>
+                        Whether you want to enhance your hotel’s guest amenities or provide a unique in-room experience, AuraRay’s personalized beauty kits are the ideal solution. Designed with elegance and quality in mind, our hotel beauty kits provide your guests with salon-grade products, ensuring a memorable and luxurious stay
                     </p>
                 </div>
 

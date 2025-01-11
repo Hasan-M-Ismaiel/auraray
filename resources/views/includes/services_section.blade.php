@@ -25,10 +25,10 @@
                     <div class="icon">
                         <i class="bi bi-activity"></i>
                     </div>
-                    <a href="{{ route('service') }}" class="stretched-link">
-                        <h3>Private label</h3>
+                    <a href="{{ route('service_1') }}" class="stretched-link">
+                        <h3>Private Label Manufacturing</h3>
                     </a>
-                    <p>for hair salons and beauty businesses.</p>
+                    <p>Create Your Own Brand with Custom Beauty Products</p>
                 </div>
             </div><!-- End Service Item -->
 
@@ -37,11 +37,10 @@
                     <div class="icon">
                         <i class="bi bi-broadcast"></i>
                     </div>
-                    <a href="{{ route('service') }}" class="stretched-link">
-                        <h3>Process information</h3>
+                    <a href="{{ route('service_2') }}" class="stretched-link">
+                        <h3>Beauty Kits for Hotels</h3>
                     </a>
-                    <p>We ensure top-quality products through a meticulous process, from sourcing premium ingredients to
-                        rigorous testing and quality checks, guaranteeing safe and effective solutions for our clients.</p>
+                    <p>Enhance Your Hotel Experience with Luxury Beauty Kits</p>
                 </div>
             </div><!-- End Service Item -->
 
@@ -50,11 +49,10 @@
                     <div class="icon">
                         <i class="bi bi-easel"></i>
                     </div>
-                    <a href="{{ route('service') }}" class="stretched-link">
-                        <h3>Quality control</h3>
+                    <a href="{{ route('service_3') }}" class="stretched-link">
+                        <h3>Exporting & Delivery Services</h3>
                     </a>
-                    <p>We ensure top-quality products through rigorous testing and consistent monitoring for safety,
-                        effectiveness, and reliability. </p>
+                    <p>Reliable Exporting and Bulk Shipping of Premium Beauty Products</p>
                 </div>
             </div><!-- End Service Item -->
         </div>

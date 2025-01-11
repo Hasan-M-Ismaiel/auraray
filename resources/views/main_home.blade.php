@@ -19,7 +19,7 @@
 <!-- End products Area -->
 
 <!-- Start stats_section Area -->
-@include('includes.stats_section')
+<!-- include('includes.stats_section')-->
 <!-- End stats_section Area -->
 
 <!-- Start contact Area -->

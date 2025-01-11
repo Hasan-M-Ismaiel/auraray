@@ -53,8 +53,18 @@ class MainHomeController extends Controller
         return view('includes.data', compact('products'));
     }
 
-    public function service()
+    public function service_1()
     {
-        return view('service-details');
+        return view('service-details-1');
+    }
+
+    public function service_2()
+    {
+        return view('service-details-2');
+    }
+
+    public function service_3()
+    {
+        return view('service-details-3');
     }
 }
