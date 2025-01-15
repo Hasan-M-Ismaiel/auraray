@@ -33,7 +33,7 @@
 
     </div>
     <div class="imgContainer ">
-      <img src="assets/img/img_parallex/image.jpg" alt="">
+      <img src="assets/img/img_parallex/image.png" alt="">
     </div>
   </div>
 </div>
@@ -41,7 +41,7 @@
 <div class="section_parallex" id="about">
   <div class="container_parallex">
     <div class="imgContainer opacity">
-      <img src="assets/img/img_parallex/image.jpg" alt="">
+      <img src="assets/img/img_parallex/image2.png" alt="">
     </div>
     <div class="content opacity">
       <p class="title">

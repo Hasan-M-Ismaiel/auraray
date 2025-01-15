@@ -10,13 +10,13 @@
 
 <!-- End about Area -->
 
-<!-- Start services Area -->
-@include('includes.services_section')
-<!-- End services Area -->
-
 <!-- Start products Area -->
 @include('includes.products')
 <!-- End products Area -->
+
+<!-- Start services Area -->
+@include('includes.services_section')
+<!-- End services Area -->
 
 <!-- Start stats_section Area -->
 <!-- include('includes.stats_section')-->
