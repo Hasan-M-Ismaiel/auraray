@@ -25,42 +25,49 @@
                             <select id="category" class="form-select theme-select">
                                 <option class="option_" selected>Category</option>
                                 <option class="option_" value="Hair Care">Hair Care</option>
-                                <option class="option_" value="Shaving and Grooming">Shaving and Grooming</option>
-                                <option class="option_" value="Skin Care">Skin Care</option>
+                                <!-- <option class="option_" value="Shaving and Grooming">Shaving and Grooming</option> -->
+                                <!-- <option class="option_" value="Skin Care">Skin Care</option> -->
                             </select>
                         </div>
                         <div class="col-6 col-md-3">
                             <select id="type" class="form-select theme-select">
                                 <option class="option_" selected>Type</option>
-                                <option class="option_" value="Shampoo">Shampoo</option>
+                                <option class="option_" value="Shower gel">Shower gel</option>
+                                <!-- <option class="option_" value="Shampoo">Shampoo</option>
                                 <option class="option_" value="Conditioner">Conditioner</option>
                                 <option class="option_" value="Hair treatment cream">Hair treatment cream</option>
                                 <option class="option_" value="Face scrub">Face scrub</option>
                                 <option class="option_" value="Foot & Body scrub">Foot & Body scrub</option>
-                                <option class="option_" value="Shaving gel">Shaving gel</option>
+                                <option class="option_" value="Shaving gel">Shaving gel</option> -->
                             </select>
                         </div>
                         <div class="col-6 col-md-3">
                             <select id="flavor" class="form-select theme-select">
                                 <option class="option_" selected>Flavor</option>
+                                <option class="option_" value="Mix fruit">Mix fruit</option>
+                                <option class="option_" value="Papaya">Papaya</option>
+                                <option class="option_" value="Strawberry">Strawberry</option>
                                 <option class="option_" value="Aloevera">Aloevera</option>
+                                <option class="option_" value="Lavendar">Lavendar</option>
+                                <option class="option_" value="Coconut oil">Coconut oil</option>
+                                <!-- <option class="option_" value="Aloevera">Aloevera</option>
                                 <option class="option_" value="Olive oil">Olive oil</option>
                                 <option class="option_" value="Strawberry">Strawberry</option>
                                 <option class="option_" value="Lavendar">Lavendar</option>
                                 <option class="option_" value="Coconut oil">Coconut oil</option>
                                 <option class="option_" value="Argan oil">Argan oil</option>
                                 <option class="option_" value="Cool blue">Cool blue</option>
-                                <option class="option_" value="Natural clear">Natural clear</option>
+                                <option class="option_" value="Natural clear">Natural clear</option> -->
                             </select>
                         </div>
                         <div class="col-6 col-md-3">
                             <select id="size" class="form-select theme-select">
                                 <option class="option_" selected>Size</option>
-                                <option class="option_" value="500ml">500ml</option>
+                                <!-- <option class="option_" value="500ml">500ml</option> -->
                                 <option class="option_" value="1000ml">1000ml</option>
-                                <option class="option_" value="1200ml">1200ml</option>
+                                <!-- <option class="option_" value="1200ml">1200ml</option> -->
                                 <option class="option_" value="4500ml">4500ml</option>
-                                <option class="option_" value="5000ml">5000ml</option>
+                                <!-- <option class="option_" value="5000ml">5000ml</option> -->
                             </select>
                         </div>
                         <div class="col-12 text-center">
