@@ -11,7 +11,7 @@ class MainHomeController extends Controller
 
     public function home(Request $request)
     {
-        $products = Product::latest()->paginate(6); // Fetch products once
+        $products = Product::inRandomOrder()->paginate(6); // Fetch products once
 
         if ($request->ajax()) {
             return view('includes.data', compact('products'));
@@ -31,7 +31,7 @@ class MainHomeController extends Controller
     {
 
         // Retrieve input fields and filter out 'null' strings
-        $inputs = $request->only(['category', 'type', 'size', 'flavor']);
+        $inputs = $request->only(['category', 'type', 'size', 'flavor', 'extract']);
         foreach ($inputs as $key => $value) {
             if ($value === 'null' || is_null($value) || $value === '') {
                 unset($inputs[$key]); // Remove invalid fields

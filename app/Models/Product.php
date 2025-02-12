@@ -14,6 +14,7 @@ class Product extends Model
         'type',
         'size',
         'flavor',
+        'extract',
         'ingredients',
         'benefits',
         'brief',

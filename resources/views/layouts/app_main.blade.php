@@ -107,6 +107,7 @@
                 var category = $('#category').find(":selected").val();
                 var type = $('#type').find(":selected").val();
                 var flavor = $('#flavor').find(":selected").val();
+                var extract = $('#extract').find(":selected").val();
                 var size = $('#size').find(":selected").val();
                 event.preventDefault();
 
@@ -126,8 +127,12 @@
                     flavor = null;
                 }
 
-                if (category != null || type != null || size != null || flavor != null) {
-                    getData__(category, type, flavor, size, page);
+                if (extract == "Extract") {
+                    extract = null;
+                }
+
+                if (category != null || type != null || size != null || flavor != null || extract != null) {
+                    getData__(category, type, flavor, extract, size, page);
                 } else {
                     getData(page);
                 }
@@ -153,6 +158,7 @@
                 var category = $('#category').find(":selected").val();
                 var type = $('#type').find(":selected").val();
                 var flavor = $('#flavor').find(":selected").val();
+                var extract = $('#extract').find(":selected").val();
                 var size = $('#size').find(":selected").val();
                 event.preventDefault();
 
@@ -171,12 +177,16 @@
                 if (flavor == "Flavor") {
                     flavor = null;
                 }
-                getData_(category, type, flavor, size);
+
+                if (extract == "Extract") {
+                    extract = null;
+                }
+                getData_(category, type, flavor, extract, size);
             });
 
-            function getData_(category, type, flavor, size) {
+            function getData_(category, type, flavor, extract, size) {
                 $.ajax({
-                        url: '/products?category=' + category + '&type=' + type + '&flavor=' + flavor + '&size=' + size,
+                        url: '/products?category=' + category + '&type=' + type + '&flavor=' + flavor + '&extract=' + extract + '&size=' + size,
                         type: "get",
                         datatype: "html",
                     })
@@ -188,9 +198,9 @@
                     });
             }
 
-            function getData__(category, type, flavor, size, page) {
+            function getData__(category, type, flavor, extract, size, page) {
                 $.ajax({
-                        url: '/products?category=' + category + '&type=' + type + '&flavor=' + flavor + '&size=' + size + '&page=' + page,
+                        url: '/products?category=' + category + '&type=' + type + '&flavor=' + flavor + '&size=' + '&extract=' + extract+ size + '&page=' + page,
                         type: "get",
                         datatype: "html",
                     })
@@ -206,6 +216,7 @@
                 $('#category').val('Category'); 
                 $('#type').val('Type'); 
                 $('#flavor').val('Flavor'); 
+                $('#extract').val('Extract'); 
                 $('#size').val('Size'); 
 
                 getData_reset();

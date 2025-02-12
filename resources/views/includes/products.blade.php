@@ -33,6 +33,10 @@
                             <select id="type" class="form-select theme-select">
                                 <option class="option_" selected>Type</option>
                                 <option class="option_" value="Shower gel">Shower gel</option>
+                                <option class="option_" value="Shower scrub">Shower scrub</option>
+                                <option class="option_" value="Lotion">Lotion</option>
+                                <option class="option_" value="Mask">Mask</option>
+                                <option class="option_" value="Serum">Serum</option>
                                 <!-- <option class="option_" value="Shampoo">Shampoo</option>
                                 <option class="option_" value="Conditioner">Conditioner</option>
                                 <option class="option_" value="Hair treatment cream">Hair treatment cream</option>
@@ -61,10 +65,23 @@
                             </select>
                         </div>
                         <div class="col-6 col-md-3">
+                            <select id="extract" class="form-select theme-select">
+                                <option class="option_" selected>Extract</option>
+                                <option class="option_" value="Argan">Argan</option>
+                                <option class="option_" value="Biotin">Biotin</option>
+                                <option class="option_" value="Caviar">Caviar</option>
+                                <option class="option_" value="Collagen">Collagen</option>
+                                <option class="option_" value="Keratin">Keratin</option>
+                                <option class="option_" value="Protein">Protein</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-3">
                             <select id="size" class="form-select theme-select">
                                 <option class="option_" selected>Size</option>
                                 <!-- <option class="option_" value="500ml">500ml</option> -->
+                                <option class="option_" value="125ml">125ml</option>
                                 <option class="option_" value="1000ml">1000ml</option>
+                                <option class="option_" value="1000ml">3780ml</option>
                                 <!-- <option class="option_" value="1200ml">1200ml</option> -->
                                 <option class="option_" value="4500ml">4500ml</option>
                                 <!-- <option class="option_" value="5000ml">5000ml</option> -->
