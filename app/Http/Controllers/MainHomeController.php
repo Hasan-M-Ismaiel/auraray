@@ -11,15 +11,13 @@ class MainHomeController extends Controller
 
     public function home(Request $request)
     {
-        $products = Product::paginate(6);
+        $products = Product::latest()->paginate(6); // Fetch products once
 
         if ($request->ajax()) {
             return view('includes.data', compact('products'));
         }
 
-        return view('main_home', [
-            'products' => Product::latest()->paginate(6),
-        ]);
+        return view('main_home', compact('products'));
     }
 
     public function showProduct(Product $product)

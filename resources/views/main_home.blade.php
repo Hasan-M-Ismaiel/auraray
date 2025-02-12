@@ -18,6 +18,10 @@
 @include('includes.services_section')
 <!-- End services Area -->
 
+<!-- ISO section Area -->
+@include('includes.iso_section')
+<!-- End services Area -->
+
 <!-- Start stats_section Area -->
 <!-- include('includes.stats_section')-->
 <!-- End stats_section Area -->
