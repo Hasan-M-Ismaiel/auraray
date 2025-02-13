@@ -33,7 +33,7 @@
 
     </div>
     <div class="imgContainer ">
-      <img src="assets/img/img_parallex/image.png" alt="">
+      <img src="assets/img/img_parallex/about.png" alt="">
     </div>
   </div>
 </div>
