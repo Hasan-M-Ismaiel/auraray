@@ -37,6 +37,7 @@
                                 <option class="option_" value="Lotion">Lotion</option>
                                 <option class="option_" value="Mask">Mask</option>
                                 <option class="option_" value="Serum">Serum</option>
+                                <option class="option_" value="Shampoo">Shampoo</option>
                                 <!-- <option class="option_" value="Shampoo">Shampoo</option>
                                 <option class="option_" value="Conditioner">Conditioner</option>
                                 <option class="option_" value="Hair treatment cream">Hair treatment cream</option>

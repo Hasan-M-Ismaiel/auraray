@@ -2,12 +2,11 @@ SHAMPOO
 
 
 argan : Fortifying and Revitalizing for Strong, Shiny Hair
-COLLAGEN : Keeps hair soft and hydrated
-PROTEIN: For a Relaxing Wash
-keratin : Gentle Cleansing for Healthy Hair
 BIOTIN : The Sweetest Way to Clean Hair
 caviar : Nourishing and Moisturizing for All Hair Types
-
+COLLAGEN : Keeps hair soft and hydrated
+keratin : Gentle Cleansing for Healthy Hair
+PROTEIN: For a Relaxing Wash
 
 
 MAIN DESCRIPTION FOR ALL OF THEM :
