@@ -13,6 +13,7 @@
                 <li><a href="{{ route('home') }}#product ">Products</a></li>
                 <li><a href="{{ route('home') }}#services">Services</a></li>
                 <li><a href="{{ route('home') }}#contact ">Contact Us</a></li>
+                <li><a href="assets/catalog/Auraray.pdf"><i class="bi bi-download me-2"></i>Catalog</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
