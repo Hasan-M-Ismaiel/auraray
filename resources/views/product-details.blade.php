@@ -5,7 +5,7 @@
 
 <main class="main">
     <section id="hero" class="hero_other section dark-background">
-        <img id="hero_image_other" src="{{ asset('assets/img/hero-bg-other-page.png') }}" alt="" data-aos="fade-in">
+        <img id="hero_image_other" src="{{ asset('assets/img/testimonials-bg.png') }}" alt="" data-aos="fade-in">
     </section>
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
@@ -14,9 +14,7 @@
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-lg-8">
                         <h1>Product Details</h1>
-                        <p class="mb-0">This section includes key information about each product, such as its name, benefits,
-                            sizes, ingredients, and usage instructions, accompanied by high-quality images to help customers make
-                            informed choices.</p>
+                        <p class="mb-0">{{ $product->brief }}.</p>
                     </div>
                 </div>
             </div>
@@ -91,16 +89,13 @@
                             <li><strong>Category</strong>: {{ $product->category }}</li>
                             <li><strong>Size</strong>: {{ $product->size }}</li>
                             <li><strong>Ingredients</strong>: {{ $product->ingredients }}</li>
-                            <li><strong>Benefits</strong>: {{ $product->benefits }}</li>
                             <li><strong>Description</strong>: {{ $product->description}}</li>
-                            <li><strong>Price</strong>: {{ $product->price }}</li>
+                            @if($product->category == "Hair care")
+                            <li><strong>Main Extract</strong>: {{ $product->extract}}</li>
+                            @else
+                            <li><strong>Main Scent</strong>: {{ $product->flavor}}</li>
+                            @endif
                         </ul>
-                    </div>
-                    <div class="product-description" data-aos="fade-up" data-aos-delay="300">
-                        <h2>Usage instructions</h2>
-                        <p>
-                            {{ $product->usage_instructions }}
-                        </p>
                     </div>
                 </div>
             </div>

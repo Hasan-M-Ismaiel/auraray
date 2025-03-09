@@ -705,6 +705,21 @@ h6 {
   transition: all 0.4s;
 }
 
+.download-pdf {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 75px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+
 .scroll-top i {
   font-size: 24px;
   color: var(--contrast-color);
@@ -714,6 +729,16 @@ h6 {
 .scroll-top:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   color: var(--contrast-color);
+}
+
+.download-pdf:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.download-pdf.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .scroll-top.active {
@@ -2033,7 +2058,7 @@ section,
 }
 
 .parallax-2 {
-  background: url('../img/parallax/image2.jpg') no-repeat;
+  background: url('../img/parallax/image2.png') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2054,7 +2079,7 @@ section,
 }
 
 .parallax-5 {
-  background: url('../img/parallax/image5.jpg') no-repeat;
+  background: url('../img/parallax/image5.png') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -2121,6 +2146,17 @@ section,
     bottom: 150px;
     right: 0;
     z-index: 17;
+}
+
+.hero-area {
+  position: relative;
+  background-color: #101130;
+  padding: 200px 0 150px 0;
+  padding-bottom: 240px;
+  background-image: url('../img/parallax/image1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .sky{

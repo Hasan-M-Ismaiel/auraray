@@ -1,12 +1,13 @@
-<div class="header_parallex">
+<div class="header_parallex hero-area">
 
-  <h1 class="big-title translate" data-speed="0.1">AuraRay</h1>
+  <!-- <h1 class="big-title translate" data-speed="0.1">AuraRay</h1> -->
 
-  <img src="assets/img/img_parallex/person.png" class="person translate" data-speed="-0.25" alt="">
+  <!-- <img src="assets/img/img_parallex/person.png" class="person translate" data-speed="-0.25" alt="">
   <img src="assets/img/img_parallex/mountain1.png" class="mountain1 translate" data-speed="-0.2" alt="">
   <img src="assets/img/img_parallex/mountain2.png" class="mountain2 translate" data-speed="0.4" alt="">
   <img src="assets/img/img_parallex/mountain3.png" class="mountain3 translate" data-speed="0.3" alt="">
-  <img src="assets/img/img_parallex/sky.png" class="sky translate" data-speed="0.5" alt="">
+  <img src="asspngets/img/img_parallex/sky.png" class="sky translate" data-speed="0.5" alt="">
+  <img src="assets/img/img_parallex/mountain3.png" class="hero-area" data-speed="0.3" alt=""> -->
 </div>
 
 <div class="section_parallex" id="about">

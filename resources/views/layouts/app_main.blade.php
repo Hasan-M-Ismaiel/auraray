@@ -200,7 +200,7 @@
 
             function getData__(category, type, flavor, extract, size, page) {
                 $.ajax({
-                        url: '/products?category=' + category + '&type=' + type + '&flavor=' + flavor + '&size=' + '&extract=' + extract+ size + '&page=' + page,
+                        url: '/products?category=' + category + '&type=' + type + '&flavor=' + flavor + '&size=' + '&extract=' + extract + size + '&page=' + page,
                         type: "get",
                         datatype: "html",
                     })
@@ -213,11 +213,11 @@
             }
 
             $("#reset").click(function() {
-                $('#category').val('Category'); 
-                $('#type').val('Type'); 
-                $('#flavor').val('Flavor'); 
-                $('#extract').val('Extract'); 
-                $('#size').val('Size'); 
+                $('#category').val('Category');
+                $('#type').val('Type');
+                $('#flavor').val('Flavor');
+                $('#extract').val('Extract');
+                $('#size').val('Size');
 
                 getData_reset();
             });
@@ -235,6 +235,43 @@
                     .fail(function(jqXHR, ajaxOptions, thrownError) {
                         alert('No response from server');
                     });
+            }
+        });
+    </script>
+
+    <!--search dynamic select-->
+    <script>
+        // When the category is changed
+        document.getElementById('category').addEventListener('change', function() {
+            var category = this.value;
+
+            // Reset Type options
+            var typeSelect = document.getElementById('type');
+            typeSelect.innerHTML = '<option class="option_" selected>Type</option>';
+
+            // Clear and hide all other components
+            document.getElementById('flavor-container').style.display = 'none';
+            document.getElementById('extract-container').style.display = 'none';
+
+            // Show category-specific components
+            if (category === 'Hair Care') {
+                // Show Extract and populate Type with hair care options
+                document.getElementById('extract-container').style.display = 'block';
+                typeSelect.innerHTML += `
+                <option class="option_" value="Shampoo">Shampoo</option>
+                <option class="option_" value="Conditioner">Conditioner</option>
+                <option class="option_" value="Serum">Serum</option>
+                <option class="option_" value="Mask">Mask</option>
+            `;
+            } else if (category === 'Skin Care') {
+                // Show Scent and populate Type with skin care options
+                document.getElementById('flavor-container').style.display = 'block';
+                typeSelect.innerHTML += `
+                <option class="option_" value="Lotion">Lotion</option>
+                <option class="option_" value="Shower gel">Shower gel</option>
+                <option class="option_" value="Shower scrub">Shower scrub</option>
+                <option class="option_" value="Massage oil">Massage oil</option>
+            `;
             }
         });
     </script>
